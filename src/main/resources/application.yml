@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://demo-myserver.database.windows.net:1433;database=demo;user=abhishek@demo-myserver;password=abhi@123;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  application:
+    name: USER-SERVICE
+
+server:
+  port: 9091
